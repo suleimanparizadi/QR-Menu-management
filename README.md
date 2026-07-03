@@ -68,9 +68,8 @@ BACKGROUND TASKS:
   - Automatic expired OTP deletion every 2 minutes
 
 
-===============================================================================
+
                             PROJECT STRUCTURE
-===============================================================================
 
 backend/
 ├── A/                          # Project settings
@@ -119,9 +118,9 @@ frontend/
 └── .env
 
 
-===============================================================================
+
                               API ENDPOINTS
-===============================================================================
+
 
 AUTHENTICATION:
   POST   /accounts/register/                          [No Auth]
@@ -149,9 +148,9 @@ MENU MANAGEMENT:
   GET    /menu/public/{id}/                           [No Auth]
 
 
-===============================================================================
+
                                   TESTING
-===============================================================================
+
 
   cd backend/
   python manage.py test
@@ -163,9 +162,9 @@ MENU MANAGEMENT:
   python manage.py test menu.tests
 
 
-===============================================================================
+
                           ENVIRONMENT VARIABLES
-===============================================================================
+
 
 BACKEND (.env):
   DEBUG=True
@@ -178,18 +177,18 @@ FRONTEND (.env):
   VITE_API_URL=http://localhost:8000
 
 
-===============================================================================
+
                               DOCKER (OPTIONAL)
-===============================================================================
+
 
   docker-compose up --build
   docker-compose exec web python manage.py migrate
   docker-compose exec web python manage.py createsuperuser
 
 
-===============================================================================
+
                               TECH STACK
-===============================================================================
+
 
   Django 6.0              Backend framework
   Django REST Framework   API framework
@@ -202,9 +201,9 @@ FRONTEND (.env):
   qrcode                  QR code generation
 
 
-===============================================================================
+
                           AUTHENTICATION FLOW
-===============================================================================
+
 
   1. Register: Send phone -> Get OTP -> Verify -> Get token
   2. Login (Password): Send identifier + password -> Get token
@@ -212,9 +211,9 @@ FRONTEND (.env):
   4. Auth Requests: Include "Authorization: Token <token>" header
 
 
-===============================================================================
+
                             FRONTEND PAGES
-===============================================================================
+
 
   Landing           Hero section, features, CTA
   Login             Password login form
@@ -233,16 +232,16 @@ FRONTEND (.env):
   Preview           Owner preview of public menu
 
 
-===============================================================================
+
                                 LICENSE
-===============================================================================
+
 
   This project is built for educational and portfolio purposes.
 
 
-===============================================================================
+
                                 AUTHOR
-===============================================================================
+
 
   Built with Django REST Framework + React
-===============================================================================
+
