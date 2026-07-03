@@ -68,57 +68,6 @@ BACKGROUND TASKS:
   - Automatic expired OTP deletion every 2 minutes
 
 
-
-                            PROJECT STRUCTURE
-
-backend/
-├── A/                          # Project settings
-│   ├── settings.py
-│   ├── urls.py
-│   └── celery.py
-├── accounts/                   # Authentication app
-│   ├── models.py               # Custom User, OTPCode
-│   ├── managers.py             # Custom UserManager
-│   ├── serializers.py
-│   ├── views.py
-│   ├── authentication.py       # Password auth backend
-│   ├── otp_authentication.py   # OTP auth backend
-│   ├── admin.py
-│   ├── urls.py
-│   └── tests/                  # 133 tests
-├── menu/                       # Menu management app
-│   ├── models.py               # QRMenu, MenuItem, Category
-│   ├── serializers.py
-│   ├── views.py
-│   ├── admin.py
-│   ├── urls.py
-│   └── tests/                  # 38 tests
-├── utils/
-│   └── otp_service.py          # OTP generation & verification
-├── media/                      # User uploads (QR codes)
-├── manage.py
-└── requirements.txt
-
-frontend/
-├── src/
-│   ├── components/
-│   │   ├── auth/               # Login, Register, OTP, ResendOTP
-│   │   ├── menu/               # MenuList, MenuCreate, MenuDetail,
-│   │   │                       # AddItems, EditItem, PublicMenu
-│   │   ├── profile/            # Profile, ChangeUsername, ChangePhone
-│   │   ├── Welcome.jsx         # Landing page
-│   │   ├── Dashboard.jsx       # User dashboard
-│   │   └── Navbar.jsx          # Navigation bar
-│   ├── services/
-│   │   └── api/                # API service layer (auth, menu, profile)
-│   ├── App.jsx
-│   └── main.jsx
-├── public/
-├── package.json
-└── .env
-
-
-
                               API ENDPOINTS
 
 
