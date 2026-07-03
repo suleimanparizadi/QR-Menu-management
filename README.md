@@ -1,6 +1,4 @@
-===============================================================================
                       MENUQR - DIGITAL MENU MANAGEMENT SYSTEM
-===============================================================================
 
 A full-stack application for creating and managing digital restaurant menus 
 with QR codes.
@@ -9,9 +7,7 @@ Backend: Django REST API  |  Frontend: React + Vite
 Tests: 171 Passing  |  UI: Persian
 
 
-===============================================================================
                                 QUICK START
-===============================================================================
 
 BACKEND (Django API):
   cd backend/
