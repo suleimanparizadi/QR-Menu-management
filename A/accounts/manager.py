@@ -6,7 +6,7 @@ import re
 class User_manager(BaseUserManager):
     
 
-    def _create_user(self, phone_number, username, email=None, password=None, **kwargs):
+    def _create_user(self, phone_number, username, email=None, password=None, **extra_fields):
 
         """
         A blue print to create normal user or super users
@@ -27,7 +27,7 @@ class User_manager(BaseUserManager):
             phone_number = phone_number,
             username = username,
             email = email,
-            **kwargs
+            **extra_fields
         )
 
         user.set_password(password)

@@ -1,0 +1,13 @@
+# Django Settings
+SECRET_KEY = 'django-insecure-h!b!$3)w8_+)3d*i^h=4o*s8*4%3!xwznp7(+i#de16ykeg)*5'
+DEBUG=True
+
+# Database
+DB_NAME='qr_menu'
+DB_USER='s_parizadi'
+DB_PASSWORD='8rzD0gB6dq'
+DB_HOST='127.0.0.1'
+DB_PORT='5432'
+
+# Redis
+REDIS_URL='redis://localhost:6379/1'

@@ -46,7 +46,6 @@ class OTP_Service:
         )
 
         self.send_otp(code)
-        print(code)
 
         return code
     
